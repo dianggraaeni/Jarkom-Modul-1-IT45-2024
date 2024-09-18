@@ -75,6 +75,10 @@
 > nc 10.15.42.60 54000
 > file: ez.pcapng
 
+![image](https://github.com/user-attachments/assets/ec747c8e-189b-4b98-a0ca-d1b96c8f3877)
+![image](https://github.com/user-attachments/assets/e98a2cb3-ee83-41b4-9981-611c7d3b1b39)
+![image](https://github.com/user-attachments/assets/d0dd35d0-f4d7-4db8-a9e5-20f6bea508d6)
+
 ## Rizzset
 > Aku sedang bereksperimen dengan suatu tools, kamu juga bisa menggunakannya untuk menjawab soal ini.
 > nc 10.15.42.60 59500
