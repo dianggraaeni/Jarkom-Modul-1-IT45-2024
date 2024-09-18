@@ -50,9 +50,12 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 
 ## Illegal Breakthrough
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
+> 
 > nc 10.15.42.60 46000
+> 
 > file: break.pcapng
 
+![image](https://github.com/user-attachments/assets/03e24d49-1a3f-4ef1-9b0f-3b622f64d5e7)
 ![image](https://github.com/user-attachments/assets/fb9eeb55-ec8e-4c25-88e0-9d9a6c1ce6ae)
 
 ```
@@ -81,7 +84,9 @@ Benar! Ini flag-mu: JarkomIT{d34th_fr0m_th3_sky_ZLi11nOcndhzMkdIDTSFoDd82H1LDXeQ
 
 ## FTP Login
 > Seseorang menemukan sebuah celah dalam sebuah server. Ia mencoba untuk melakukan brute force login dan ia berhasil masuk. Lakukan pemeriksaan untuk melihat apa yang dilakukan oleh orang tersebut!
+> 
 > nc 10.15.42.60 49000
+> 
 > file: ftplogin.pcapng
 
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
@@ -103,7 +108,9 @@ Benar! Ini flag-mu: JarkomIT{n0t_s0_s3cur3_ftp_3ZvMs3ZibbtrySJYxKgvG72wyL0ig3hhs
 
 ## Surprise
 > Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi.
+> 
 > nc 10.15.42.60 48500
+> 
 > file: File sama seperti FTP Login
 ![image](https://github.com/user-attachments/assets/68fbcede-1cc9-4097-b567-cbff3e253e5f)
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
@@ -132,7 +139,9 @@ Benar! Ini flag-mu: JarkomIT{l1ttl3_m0us3_1n_th3_h0us3_lUhvSdRHEPjx2SGkhL3AT4DiN
 
 ## Corporate Breach
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
+> 
 > nc 10.15.42.60 51000
+> 
 > file: breach.pcapng
 ![image](https://github.com/user-attachments/assets/d3b70d89-3460-4e65-9884-995d1b8e4d56)
 ![image](https://github.com/user-attachments/assets/14813eea-ce08-4525-927b-a4a3039d1716)
@@ -157,7 +166,9 @@ Benar! Ini flag-mu: JarkomIT{supp0rt_k0k_l3m4h_bg_caT1X51I2UoFwpZcw5fVTAUm8G6zDw
 
 ## Pegawai Negeri Sebelah
 > Kamu seorang data analisis diminta untuk memastikan ulang data-data dari beberapa pegawai.
+> 
 > nc 10.15.42.60 53000
+> 
 > file: rahasia.pcap
 
 ![image](https://github.com/user-attachments/assets/0d1a9b1c-fa37-4ce2-be07-f0f69c7dafa7)
@@ -188,7 +199,9 @@ Benar! Ini flag-mu: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_d4EjysuhNbOdCX7LoT4Z9g
 
 ## EZ
 > Aku sedang mencoba bikin chat service tapi kayanya pesannya bisa di sniffing deh? coba temukan pesannya.
+> 
 > nc 10.15.42.60 54000
+> 
 > file: ez.pcapng
 
 ![image](https://github.com/user-attachments/assets/ec747c8e-189b-4b98-a0ca-d1b96c8f3877)
@@ -211,13 +224,18 @@ Benar! Ini flag-mu: JarkomIT{BiAr_aman_Pake_sSh_6kgAozQUg7KBsvScORpWgISPs3zepqu7
 
 ## Rizzset
 > Aku sedang bereksperimen dengan suatu tools, kamu juga bisa menggunakannya untuk menjawab soal ini.
+> 
 > nc 10.15.42.60 59500
+> 
 > file: riset.pcapng
 
 ## Malicious Code
 > Ternyata sang attacker dengan sengaja meninggalkan sesuatu untuk dibaca oleh kamu. Lihat pesan apa yang ditinggalkan attacker.
-File sama seperti Corporate Breach.
+> 
+> File sama seperti Corporate Breach.
+> 
 > nc 10.15.42.60 52000
+> 
 > file: breach.pcapng
 
 ![Screenshot 2024-09-18 234023](https://github.com/user-attachments/assets/7ae2e5eb-10a7-4230-93b0-1afeab6c73df)
