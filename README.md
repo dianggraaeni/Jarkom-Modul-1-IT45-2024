@@ -45,7 +45,7 @@
 > nc 10.15.42.60 48500
 > file: File sama seperti FTP Login
 
-
+![image](https://github.com/user-attachments/assets/2bae3f82-8f21-4586-9332-3c0fb66686be)
 
 ## Corporate Breach
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
