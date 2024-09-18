@@ -6,14 +6,14 @@
 | ⁠Abhirama Triadyatma Hermawan | 5027231061 |
 
 ## Content
-   * [Advance Sanity Check]
-   * [Illegal Breakthrough]
-   * [FTP Login]
-   * [Surprise]
-   * [Corporate Breach]
-   * [Pegawai Negeri Sebelah]
-   * [EZ]
-   * [Rizzset]
+   * Advance Sanity Check
+   * Illegal Breakthrough
+   * FTP Login
+   * Surprise
+   * Corporate Breach
+   * Pegawai Negeri Sebelah
+   * EZ
+   * Rizzset
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
@@ -21,8 +21,10 @@
 > file: sanity.pcapng
 
 ![image](https://github.com/user-attachments/assets/40b98317-668c-49e9-bbc8-87e7b033bc34)
-![image](https://github.com/user-attachments/assets/40b98317-668c-49e9-bbc8-87e7b033bc34)
-
+![image](https://github.com/user-attachments/assets/bbcc7e1e-1296-47e8-a170-7147b01ab646)
+![image](https://github.com/user-attachments/assets/174b9a88-3bae-4e74-8444-6d65d8c42714)
+![image](https://github.com/user-attachments/assets/c15b474d-d1b6-4691-8841-901ddea66910)
+![image](https://github.com/user-attachments/assets/ea581344-341d-4362-83f8-b9df2f2e4603)
 
 ## Illegal Breakthrough
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
