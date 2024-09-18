@@ -46,6 +46,7 @@
 > file: File sama seperti FTP Login
 
 ![image](https://github.com/user-attachments/assets/2bae3f82-8f21-4586-9332-3c0fb66686be)
+![image](https://github.com/user-attachments/assets/b8e7f702-c633-49d5-9df5-018e4b8f3a51)
 
 ## Corporate Breach
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
