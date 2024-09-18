@@ -14,6 +14,7 @@
    * Pegawai Negeri Sebelah
    * EZ
    * Rizzset
+   * Malicious Code
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
@@ -61,6 +62,21 @@
 > nc 10.15.42.60 59500
 > file: riset.pcapng
 
-   
+## Malicious Code
+> Ternyata sang attacker dengan sengaja meninggalkan sesuatu untuk dibaca oleh kamu. Lihat pesan apa yang ditinggalkan attacker.
+File sama seperti Corporate Breach.
+> nc 10.15.42.60 52000
+> file: breach.pcapng
 
+![Screenshot 2024-09-18 234023](https://github.com/user-attachments/assets/7ae2e5eb-10a7-4230-93b0-1afeab6c73df)
+
+  - Pertama kita melakukan "http contains 'GET'" untuk menemukan berapa kali attacker melakukan HTTP request "GET" dan melihat berapa paket HTTP yang terdisplay
+    ![image](https://github.com/user-attachments/assets/e646fa00-bf25-452a-acb7-cea5650bbf34)
+  - Lalu untuk pertanyaan kedua kita lihat HTTP request yang sudah ter display filter tadi dan cari packet yang terakhir. Di situ kita dapat menemukan endpoint "index.php"
+    ![Screenshot 2024-09-19 001432](https://github.com/user-attachments/assets/f5c6cfda-3b58-42e4-adf8-304d7222c3ec)
+  - Lalu kita display filter "HTTP contains 'POST'" untuk melihat POST berupa login dari attacker
+    ![image](https://github.com/user-attachments/assets/b6cfc585-8b4e-4399-b478-268713803886)
+  - Setelah di analisis 5 POST paling bawah memiliki messege dari attacker namun tidak ada pertanyaan... Di packet yang terakhir terdapat ASCII yang jika di lakukan decode menjadi seperti berikut
+    ![Screenshot 2024-09-18 233141](https://github.com/user-attachments/assets/5cddda6e-d3cd-4bae-b49b-aa55188e954f)
+  - Jawabannya adalah merah karena VSCODE salah satu ASLAB yang MERAH sangat mencolok
 
