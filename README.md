@@ -14,6 +14,8 @@
    * Pegawai Negeri Sebelah
    * EZ
    * Rizzset
+   * Packets Barrage
+   * Malicious Code
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
