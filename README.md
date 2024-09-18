@@ -52,6 +52,9 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
 > nc 10.15.42.60 46000
 > file: break.pcapng
+
+![image](https://github.com/user-attachments/assets/fb9eeb55-ec8e-4c25-88e0-9d9a6c1ce6ae)
+
 ```
 $ nc 10.15.42.60 46000
 
