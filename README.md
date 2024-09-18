@@ -50,6 +50,29 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
 > nc 10.15.42.60 46000
 > file: break.pcapng
+```
+$ nc 10.15.42.60 46000
+
+===== Illegal Breakthrough =====
+Note: You can exit anytime by typing 'exit'
+
+Apa IP address dari korban?
+Format: xxx.xxx.xxx.xxx
+> 172.21.88.207
+Apa port yang digunakan sebagai webserver?
+Format: xxxx: ex. 443
+> 1917
+Dimana endpoint yang terdapat login?
+Format: /endpoint/path.php
+> /ww1.php
+Tools apa yang digunakan oleh attacker?
+Format: toolsname-version ex. hydra-v9.0-dev
+> ffuf-v2.1.0-dev
+Apa kredensial yang berhasil digunakan oleh attacker untuk login?
+Format: username:password
+> Redbaron:fly1ng4c3
+Benar! Ini flag-mu: JarkomIT{d34th_fr0m_th3_sky_ZLi11nOcndhzMkdIDTSFoDd82H1LDXeQabpP1pHallN0QJDYtM0WWW1}
+```
 
 ## FTP Login
 > Seseorang menemukan sebuah celah dalam sebuah server. Ia mencoba untuk melakukan brute force login dan ia berhasil masuk. Lakukan pemeriksaan untuk melihat apa yang dilakukan oleh orang tersebut!
