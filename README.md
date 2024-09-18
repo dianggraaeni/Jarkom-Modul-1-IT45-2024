@@ -44,7 +44,7 @@
 > Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi.
 > nc 10.15.42.60 48500
 > file: File sama seperti FTP Login
-
+![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
 ![image](https://github.com/user-attachments/assets/2bae3f82-8f21-4586-9332-3c0fb66686be)
 ![image](https://github.com/user-attachments/assets/b8e7f702-c633-49d5-9df5-018e4b8f3a51)
 
