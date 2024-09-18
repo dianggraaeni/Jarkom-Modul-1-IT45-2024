@@ -50,14 +50,8 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 
 ## Illegal Breakthrough
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
-> 
 > nc 10.15.42.60 46000
-> 
 > file: break.pcapng
-
-![image](https://github.com/user-attachments/assets/03e24d49-1a3f-4ef1-9b0f-3b622f64d5e7)
-![image](https://github.com/user-attachments/assets/fb9eeb55-ec8e-4c25-88e0-9d9a6c1ce6ae)
-
 ```
 $ nc 10.15.42.60 46000
 
@@ -84,9 +78,7 @@ Benar! Ini flag-mu: JarkomIT{d34th_fr0m_th3_sky_ZLi11nOcndhzMkdIDTSFoDd82H1LDXeQ
 
 ## FTP Login
 > Seseorang menemukan sebuah celah dalam sebuah server. Ia mencoba untuk melakukan brute force login dan ia berhasil masuk. Lakukan pemeriksaan untuk melihat apa yang dilakukan oleh orang tersebut!
-> 
 > nc 10.15.42.60 49000
-> 
 > file: ftplogin.pcapng
 
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
@@ -108,9 +100,7 @@ Benar! Ini flag-mu: JarkomIT{n0t_s0_s3cur3_ftp_3ZvMs3ZibbtrySJYxKgvG72wyL0ig3hhs
 
 ## Surprise
 > Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi.
-> 
 > nc 10.15.42.60 48500
-> 
 > file: File sama seperti FTP Login
 ![image](https://github.com/user-attachments/assets/68fbcede-1cc9-4097-b567-cbff3e253e5f)
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
@@ -139,9 +129,7 @@ Benar! Ini flag-mu: JarkomIT{l1ttl3_m0us3_1n_th3_h0us3_lUhvSdRHEPjx2SGkhL3AT4DiN
 
 ## Corporate Breach
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
-> 
 > nc 10.15.42.60 51000
-> 
 > file: breach.pcapng
 ![image](https://github.com/user-attachments/assets/d3b70d89-3460-4e65-9884-995d1b8e4d56)
 ![image](https://github.com/user-attachments/assets/14813eea-ce08-4525-927b-a4a3039d1716)
@@ -166,9 +154,7 @@ Benar! Ini flag-mu: JarkomIT{supp0rt_k0k_l3m4h_bg_caT1X51I2UoFwpZcw5fVTAUm8G6zDw
 
 ## Pegawai Negeri Sebelah
 > Kamu seorang data analisis diminta untuk memastikan ulang data-data dari beberapa pegawai.
-> 
 > nc 10.15.42.60 53000
-> 
 > file: rahasia.pcap
 
 ![image](https://github.com/user-attachments/assets/0d1a9b1c-fa37-4ce2-be07-f0f69c7dafa7)
@@ -199,9 +185,7 @@ Benar! Ini flag-mu: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_d4EjysuhNbOdCX7LoT4Z9g
 
 ## EZ
 > Aku sedang mencoba bikin chat service tapi kayanya pesannya bisa di sniffing deh? coba temukan pesannya.
-> 
 > nc 10.15.42.60 54000
-> 
 > file: ez.pcapng
 
 ![image](https://github.com/user-attachments/assets/ec747c8e-189b-4b98-a0ca-d1b96c8f3877)
@@ -224,18 +208,43 @@ Benar! Ini flag-mu: JarkomIT{BiAr_aman_Pake_sSh_6kgAozQUg7KBsvScORpWgISPs3zepqu7
 
 ## Rizzset
 > Aku sedang bereksperimen dengan suatu tools, kamu juga bisa menggunakannya untuk menjawab soal ini.
-> 
 > nc 10.15.42.60 59500
-> 
 > file: riset.pcapng
+> Pertama saya melakukan filter untuk mencari protocol "dns"
+
+![image](https://github.com/user-attachments/assets/3f10db8c-fda4-4c46-a7e3-f62a48826449)
+
+> Lalu dari filter tersebut kita juga bisa melihat IP dari domain tersebut yaitu "103.94.189.5" 
+
+> Lalu kita lakukan "python3 jarm.py www.its.ac.id"
+
+![image](https://github.com/user-attachments/assets/d8c90235-61a7-4f8e-b180-78001c1e2900)
+
+![Screenshot 2024-09-18 225645](https://github.com/user-attachments/assets/f20aa130-3be6-4c4e-b314-3ef1826d83b5)
+
+## Malicious Code
+> Setelah membantu kevin untuk tracing attacker, sekarang bantu lagi kevin untuk mencari apa yang dilakukan oleh attacker.
+File sama seperti Illegal Breakthrough.
+> nc 10.15.42.60 47000
+> file: break.pcapng
+
+![image](https://github.com/user-attachments/assets/a416302b-2022-4772-8e75-c0c555266a64)
+
+> Pertama kita cari "http contains 'POST'" untuk melihat IP dari attacker
+
+![Screenshot 2024-09-19 014632](https://github.com/user-attachments/assets/b9c2aa69-c64e-49ac-88a4-b761dfb0b19d)
+
+> Lalu "http contains 'download'" untuk mencari file yang di download
+
+![image](https://github.com/user-attachments/assets/72436e62-b4bc-4b1f-9670-215d95089280)
+
+> Disitu kita juga bisa menumukan messege yang di selipakan attacker "Der Rote Kampfflieger"
 
 ## Malicious Code
 > Ternyata sang attacker dengan sengaja meninggalkan sesuatu untuk dibaca oleh kamu. Lihat pesan apa yang ditinggalkan attacker.
-> 
-> File sama seperti Corporate Breach.
-> 
-> nc 10.15.42.60 52000
-> 
+File sama seperti Corporate Breach.
+> nc 10.15.42.60 52![Screenshot 2024-09-19 014632](https://github.com/user-attachments/assets/9afba505-90a8-4f2a-b670-ab058eaff43b)
+000
 > file: breach.pcapng
 
 ![Screenshot 2024-09-18 234023](https://github.com/user-attachments/assets/7ae2e5eb-10a7-4230-93b0-1afeab6c73df)
