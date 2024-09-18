@@ -37,10 +37,15 @@
 > nc 10.15.42.60 49000
 > file: ftplogin.pcapng
 
+![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
+![image](https://github.com/user-attachments/assets/0573b959-75e6-4d6f-91bc-f245a03e053f)
+
 ## Surprise
 > Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi.
 > nc 10.15.42.60 48500
 > file: File sama seperti FTP Login
+
+
 
 ## Corporate Breach
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
