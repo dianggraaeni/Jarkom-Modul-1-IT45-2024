@@ -55,6 +55,9 @@
 > Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
 > nc 10.15.42.60 51000
 > file: breach.pcapng
+![image](https://github.com/user-attachments/assets/d3b70d89-3460-4e65-9884-995d1b8e4d56)
+![image](https://github.com/user-attachments/assets/14813eea-ce08-4525-927b-a4a3039d1716)
+![image](https://github.com/user-attachments/assets/09c34fa9-21f9-4458-9408-8a4a2a1f4148)
 
 ## Pegawai Negeri Sebelah
 > Kamu seorang data analisis diminta untuk memastikan ulang data-data dari beberapa pegawai.
