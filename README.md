@@ -25,6 +25,7 @@
 ![image](https://github.com/user-attachments/assets/174b9a88-3bae-4e74-8444-6d65d8c42714)
 ![image](https://github.com/user-attachments/assets/c15b474d-d1b6-4691-8841-901ddea66910)
 ![image](https://github.com/user-attachments/assets/ea581344-341d-4362-83f8-b9df2f2e4603)
+![image](https://github.com/user-attachments/assets/eede7b39-c0e2-471d-a9a6-039c94cece5d)
 
 ## Illegal Breakthrough
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
