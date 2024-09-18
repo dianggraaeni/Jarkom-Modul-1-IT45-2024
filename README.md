@@ -64,6 +64,12 @@
 > nc 10.15.42.60 53000
 > file: rahasia.pcap
 
+![image](https://github.com/user-attachments/assets/0d1a9b1c-fa37-4ce2-be07-f0f69c7dafa7)
+![image](https://github.com/user-attachments/assets/2ccec5bd-b089-4fc4-923e-d68f14dab6f5)
+![image](https://github.com/user-attachments/assets/ce896b1c-6009-49a3-86db-c2348ee33216)
+![image](https://github.com/user-attachments/assets/09c7f492-1adc-4d45-836a-f1d1ae4943f7)
+![image](https://github.com/user-attachments/assets/5221c9ae-d255-408e-befa-edb30fa6ee44)
+
 ## EZ
 > Aku sedang mencoba bikin chat service tapi kayanya pesannya bisa di sniffing deh? coba temukan pesannya.
 > nc 10.15.42.60 54000
