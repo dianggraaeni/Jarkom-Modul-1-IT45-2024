@@ -17,7 +17,9 @@
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
+> 
 > nc 10.15.42.60 44000
+> 
 > file: sanity.pcapng
 
 ![image](https://github.com/user-attachments/assets/40b98317-668c-49e9-bbc8-87e7b033bc34)
