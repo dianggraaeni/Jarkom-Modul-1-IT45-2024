@@ -16,6 +16,7 @@
    * Rizzset
    * Packets Barrage
    * Malicious Code
+   (+)
    * Gajah Terbang (Server Recon)
    * Gajah Terbang (Attacker Recon)
    * Stegography
@@ -311,7 +312,9 @@ Pertama kita melakukan "http contains 'GET'" untuk menemukan berapa kali attacke
 
 ![image](https://github.com/user-attachments/assets/616bd21e-2fec-41ca-abb5-e1d683784842)
 ![image](https://github.com/user-attachments/assets/8b907892-3254-4c75-8421-0b319d6287db)
+![image](https://github.com/user-attachments/assets/81aae13b-3972-4af2-9c9d-1f92f7b1a21d)
 
+```
 $ nc 10.15.42.60 61000
 
 ===== Gajah Terbang (Server Recon) =====
@@ -342,6 +345,7 @@ Apa password yang digunakan oleh admin?
 Format: string
 > admin1234
 Benar! Ini flag-mu: JarkomIT{Gy4tT_M5g_4U_EtfGOMNeXuVKYB7KXeLlaF9pP5k1WZWvWqmjaRMXNTUZszkPFp9IJBiD1}
+```
 
 ## Gajah Terbang (Attacker Recon)
 > Yang sederhana dulu aja.
