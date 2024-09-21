@@ -24,6 +24,8 @@
 > 
 > file: sanity.pcapng
 
+Dalam menyelesaikan challenge ini kami menggunakan filter "TCP stream" di Wireshark untuk melihat data komunikasi yang terjadi di satu aliran jaringan. Kami mulai dengan menyaring stream dari nomor 0, kemudian menemukan informasi penting pada stream ke-3. Selanjutnya, karena di terminal ditanyakan "apa username pengirim" maka kami mencoba untuk memasukkan username pengirim yaitu "JaneD03" ke dalam terminal dan ternyata berhasil, lalu menaikkan stream ke nomor 4, di mana clue "clue3.txt" muncul dimana menjawab pertanyaan dan memenuhi persyaratan format filename.txt. Petunjuk selanjutnya meminta kami untuk mengikuti petunjuk untuk mendapatkan pesan rahasia, yang dimana saat kami scroll isi konten di stream 4 itu ada tulisan yang mengarahkan kami untuk memeriksa aturan soal shift. Kami pun memeriksa ppt aturan praktikum di bagian soal shift dan akhirnya menemukan pesan rahasia. Pesan tersebut kami decode dan akhirnya kami berhasil menemukan flag!
+
 ![image](https://github.com/user-attachments/assets/40b98317-668c-49e9-bbc8-87e7b033bc34)
 ![image](https://github.com/user-attachments/assets/bbcc7e1e-1296-47e8-a170-7147b01ab646)
 ![image](https://github.com/user-attachments/assets/174b9a88-3bae-4e74-8444-6d65d8c42714)
@@ -50,8 +52,14 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 
 ## Illegal Breakthrough
 > Seorang full-stack developer bernama kevin sedang membuat sebuah web yang memiliki login page. Tetapi karena ia hanya digaji rendah, ia lupa untuk mengamankan web yang ia buat. Bantulah kevin untuk tracing dari jejak yang ditinggalkan oleh attacker.
+> 
 > nc 10.15.42.60 46000
+> 
 > file: break.pcapng
+
+Dalam challenge ini, kami menotice bahwa banyak paket yang mengarah ke stream 1917. Dengan mengikuti stream ini, kami pada akhirnya bisa melihat seluruh aktivitas penyerang, termasuk IP, port, endpoint, serta tools yang digunakan. Dan ternyata isi konten stream 1917 adalah jawaban yang benar sehingga kami mendapatkan flag!
+
+
 ```
 $ nc 10.15.42.60 46000
 
@@ -78,8 +86,12 @@ Benar! Ini flag-mu: JarkomIT{d34th_fr0m_th3_sky_ZLi11nOcndhzMkdIDTSFoDd82H1LDXeQ
 
 ## FTP Login
 > Seseorang menemukan sebuah celah dalam sebuah server. Ia mencoba untuk melakukan brute force login dan ia berhasil masuk. Lakukan pemeriksaan untuk melihat apa yang dilakukan oleh orang tersebut!
+> 
 > nc 10.15.42.60 49000
+> 
 > file: ftplogin.pcapng
+
+Mirip dengan challenge "Advance Sanity Check", kami juga harus mencari username dan password dalam challenge ini. Prosesnya sama yaitu dimulai dengan melihat apa yang terjadi di terminal dan kemudian menggunakan filter TCP stream. Setelah memulai dari stream 0, pada akhirnya kami menemukan login yang berhasil pada stream ke-4. Dari situ, kami mengetahui bahwa username yang digunakan untuk FTP login adalah "sn34ky" dan passwordnya adalah "sup3rsn1ff3r".
 
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
 ![image](https://github.com/user-attachments/assets/0573b959-75e6-4d6f-91bc-f245a03e053f)
@@ -99,9 +111,14 @@ Benar! Ini flag-mu: JarkomIT{n0t_s0_s3cur3_ftp_3ZvMs3ZibbtrySJYxKgvG72wyL0ig3hhs
 ```
 
 ## Surprise
-> Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi.
+> Setelah mengetahui apa yang diketahui pada challenge sebelumnya, sekarang lakukan analisis untuk mengetahui apa yang sebenarnya terjadi
+> 
 > nc 10.15.42.60 48500
+> 
 > file: File sama seperti FTP Login
+
+Challenge ini dimulai dengan pertanyaan mengenai service apa saja yang digunakan. Prosesnya sama seperti challenge sebelumnya, di mana kami mengikuti TCP stream dari nomor 0. Setelah beberapa kali mencoba, di stream ke-4 ditemukan informasi login berhasil dengan versi yang benar. Setelah itu, ditemukan file bernama "gotcha.cpp". Setelah menjalankan program tersebut, pesan rahasia ditemukan dan kami mendapatkan flag!
+
 ![image](https://github.com/user-attachments/assets/68fbcede-1cc9-4097-b567-cbff3e253e5f)
 ![image](https://github.com/user-attachments/assets/926ba162-f4d4-45d3-8ff3-8f0cbfa8be83)
 ![image](https://github.com/user-attachments/assets/86b54813-b9f7-4dbc-8e0d-a963cc2a6e18)
@@ -128,9 +145,14 @@ Benar! Ini flag-mu: JarkomIT{l1ttl3_m0us3_1n_th3_h0us3_lUhvSdRHEPjx2SGkhL3AT4DiN
 ```
 
 ## Corporate Breach
-> Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker.
+> Sebuah perusahaan IT support mendapatkan serangan oleh orang tidak dikenal. Bantulah perusahaan tersebut untuk melacak jejak yang ditinggalkan oleh attacker
+> 
 > nc 10.15.42.60 51000
+> 
 > file: breach.pcapng
+
+Dalam challenge ini, pertama, kami disuruh mencari siapa nama attackernya. Sama seperti sebelum-sebelumnya kami memakai filter tcp stream dan berakhir menemukan pesan dengan nama Nakhimov, akhirnya kami berasumsi bahwa Nakhimovlah attackernya dan ternyata benar. Lalu kami mengikuti stream tersebut hingga akhirnya di stream 207 ditemukan informasi login yang benar. Kami memperoleh email dan password tersebut karena terlihat mencurigakan, berbeda dari konten lainnya karena tidak ada HTML di bawahnya, sehingga kami yakin itu adalah informasi yang benar, dan ternyata dugaan kami benar, sehingga kami mendapatkan flag!
+
 ![image](https://github.com/user-attachments/assets/d3b70d89-3460-4e65-9884-995d1b8e4d56)
 ![image](https://github.com/user-attachments/assets/14813eea-ce08-4525-927b-a4a3039d1716)
 ![image](https://github.com/user-attachments/assets/09c34fa9-21f9-4458-9408-8a4a2a1f4148)
@@ -154,8 +176,12 @@ Benar! Ini flag-mu: JarkomIT{supp0rt_k0k_l3m4h_bg_caT1X51I2UoFwpZcw5fVTAUm8G6zDw
 
 ## Pegawai Negeri Sebelah
 > Kamu seorang data analisis diminta untuk memastikan ulang data-data dari beberapa pegawai.
+> 
 > nc 10.15.42.60 53000
+> 
 > file: rahasia.pcap
+
+Untuk challenge ini, kami harus menemukan beberapa informasi seperti pemilik password "nNnM%coQuF" dan jabatan orang tertentu. Dengan mengikuti TCP stream, kami berhasil menemukan data-datanya. Lalu dengan memakai fitur find di bagian bawah akhirnya kami menemukan bahwa password tersebut dimiliki oleh "Vero Tampubolon". Selain itu, ditemukan bahwa jabatan Taufan Kuswandari adalah "Analis Kebijakan", dan urutan pertama di daftar adalah "Cici Mustofa", sementara password terakhir yang ditemukan adalah "RyxaJPv^yF". Semua jawabannya benar dan akhirnya kami mendapatkan flag!
 
 ![image](https://github.com/user-attachments/assets/0d1a9b1c-fa37-4ce2-be07-f0f69c7dafa7)
 ![image](https://github.com/user-attachments/assets/2ccec5bd-b089-4fc4-923e-d68f14dab6f5)
@@ -185,8 +211,12 @@ Benar! Ini flag-mu: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_d4EjysuhNbOdCX7LoT4Z9g
 
 ## EZ
 > Aku sedang mencoba bikin chat service tapi kayanya pesannya bisa di sniffing deh? coba temukan pesannya.
+> 
 > nc 10.15.42.60 54000
+> 
 > file: ez.pcapng
+
+Challenge ini melibatkan searching jawaban darii file log. Kami memulai dengan mencari stream 0, lalu kami coba untuk follow stream random, dan ternyata kami menemukan isi kontennya sesuai dengan format yang diminta. Dan ternyata jawabannya lalu kami juga menemukan port yang digunakan untuk layanan tersebut adalah 1234. Dari situlah kami akhirnya mendapatkan flag!
 
 ![image](https://github.com/user-attachments/assets/ec747c8e-189b-4b98-a0ca-d1b96c8f3877)
 ![image](https://github.com/user-attachments/assets/e98a2cb3-ee83-41b4-9981-611c7d3b1b39)
@@ -208,8 +238,11 @@ Benar! Ini flag-mu: JarkomIT{BiAr_aman_Pake_sSh_6kgAozQUg7KBsvScORpWgISPs3zepqu7
 
 ## Rizzset
 > Aku sedang bereksperimen dengan suatu tools, kamu juga bisa menggunakannya untuk menjawab soal ini.
+> 
 > nc 10.15.42.60 59500
+> 
 > file: riset.pcapng
+> 
 > Pertama saya melakukan filter untuk mencari protocol "dns"
 
 ![image](https://github.com/user-attachments/assets/3f10db8c-fda4-4c46-a7e3-f62a48826449)
@@ -224,8 +257,11 @@ Benar! Ini flag-mu: JarkomIT{BiAr_aman_Pake_sSh_6kgAozQUg7KBsvScORpWgISPs3zepqu7
 
 ## Malicious Code
 > Setelah membantu kevin untuk tracing attacker, sekarang bantu lagi kevin untuk mencari apa yang dilakukan oleh attacker.
-File sama seperti Illegal Breakthrough.
+> 
+> File sama seperti Illegal Breakthrough.
+> 
 > nc 10.15.42.60 47000
+> 
 > file: break.pcapng
 
 ![image](https://github.com/user-attachments/assets/a416302b-2022-4772-8e75-c0c555266a64)
@@ -243,7 +279,9 @@ File sama seperti Illegal Breakthrough.
 ## Malicious Code
 > Ternyata sang attacker dengan sengaja meninggalkan sesuatu untuk dibaca oleh kamu. Lihat pesan apa yang ditinggalkan attacker.
 File sama seperti Corporate Breach.
+> 
 > nc 10.15.42.60 52![Screenshot 2024-09-19 014632](https://github.com/user-attachments/assets/9afba505-90a8-4f2a-b670-ab058eaff43b)
+> 
 000
 > file: breach.pcapng
 
