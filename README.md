@@ -16,6 +16,9 @@
    * Rizzset
    * Packets Barrage
    * Malicious Code
+   * Gajah Terbang (Server Recon)
+   * Gajah Terbang (Attacker Recon)
+   * Stegography
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
@@ -296,4 +299,27 @@ Pertama kita melakukan "http contains 'GET'" untuk menemukan berapa kali attacke
     Setelah di analisis 5 POST paling bawah memiliki messege dari attacker namun tidak ada pertanyaan... Di packet yang terakhir terdapat ASCII yang jika di lakukan decode menjadi seperti berikut
     ![Screenshot 2024-09-18 233141](https://github.com/user-attachments/assets/5cddda6e-d3cd-4bae-b49b-aa55188e954f)
     Jawabannya adalah merah karena VSCODE salah satu ASLAB yang MERAH sangat mencolok
+
+# Bagian Revisi
+## Gajah Terbang (Server Recon)
+> Yang sederhana dulu aja.
+>
+> nc 10.15.42.60 61000
+> 
+> Pada perusahaan PT. +1000 Aura telah terjadi insiden yang besar, dimana seorang hengker berhasil masuk ke sistem database perusahaan tersebut, dan melakukan manipulasi sistem database mereka. Anda sebagai profesional Cyber Security Analyst ditugaskan untuk melakukan investigasi melalui log network yang berhasil tercapture!
+
+## Gajah Terbang (Attacker Recon)
+> Yang sederhana dulu aja.
+>
+> nc 10.15.42.60 62000
+> 
+> Setelah berhasil menginvestigasi server yang berjalan, kamu diharuskan untuk mencari identitas dan mencari jejak apa saja yang telah dilakukan oleh penyerang! Kamu jago, pasti bisa let’s go temukan tersangkanya!!!
+File sama seperti Gajah Terbang.
+
+## Stegeography
+> Seekor stegosaurus berusaha menyimpan pesan di dalam beberapa gambar apakah kamu bisa memperoleh dan menyusunnya?
+>
+> nc 10.15.42.60 58000
+>
+> 14.zip
 
