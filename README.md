@@ -59,6 +59,8 @@ Benar! Ini flag-mu: JarkomIT{8uK4n_S4n1ty_b1a5A_PZsva59iSBLGsLwPMcz5nvnQbSu576bm
 
 Dalam challenge ini, kami menotice bahwa banyak paket yang mengarah ke stream 1917. Dengan mengikuti stream ini, kami pada akhirnya bisa melihat seluruh aktivitas penyerang, termasuk IP, port, endpoint, serta tools yang digunakan. Dan ternyata isi konten stream 1917 adalah jawaban yang benar sehingga kami mendapatkan flag!
 
+![Uploading image.png…]()
+
 
 ```
 $ nc 10.15.42.60 46000
