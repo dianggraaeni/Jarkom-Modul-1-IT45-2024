@@ -309,6 +309,40 @@ Pertama kita melakukan "http contains 'GET'" untuk menemukan berapa kali attacke
 > 
 > Pada perusahaan PT. +1000 Aura telah terjadi insiden yang besar, dimana seorang hengker berhasil masuk ke sistem database perusahaan tersebut, dan melakukan manipulasi sistem database mereka. Anda sebagai profesional Cyber Security Analyst ditugaskan untuk melakukan investigasi melalui log network yang berhasil tercapture!
 
+![image](https://github.com/user-attachments/assets/616bd21e-2fec-41ca-abb5-e1d683784842)
+![image](https://github.com/user-attachments/assets/8b907892-3254-4c75-8421-0b319d6287db)
+
+$ nc 10.15.42.60 61000
+
+===== Gajah Terbang (Server Recon) =====
+Note: You can exit anytime by typing 'exit'
+
+Apa DBMS yang digunakan pada server tersebut?
+Format: string ex. MonggoDB
+> PostgreSQL
+Di port berapa DBMS server tersebut berjalan?
+Format: xxxx ex. 443
+> 6969    
+OS apa yang digunakan untuk server tersebut?
+Format: string ex. linux
+> Debian
+Apa credentials username DBMS valid yang digunakan?
+Format: string
+> s1gm4
+Apa nama database yang digunakan?
+Format: string
+> sigmaskibidigyatrizzzz
+Ada berapa banyak users dalam database tersebut?
+Format: number
+> 4
+Apa email yang digunakan oleh admin?
+Format: email@gmail.com
+> jojohermawan@gmail.com
+Apa password yang digunakan oleh admin?
+Format: string
+> admin1234
+Benar! Ini flag-mu: JarkomIT{Gy4tT_M5g_4U_EtfGOMNeXuVKYB7KXeLlaF9pP5k1WZWvWqmjaRMXNTUZszkPFp9IJBiD1}
+
 ## Gajah Terbang (Attacker Recon)
 > Yang sederhana dulu aja.
 >
