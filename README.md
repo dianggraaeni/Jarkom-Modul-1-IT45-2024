@@ -310,6 +310,8 @@ Pertama kita melakukan "http contains 'GET'" untuk menemukan berapa kali attacke
 > 
 > Pada perusahaan PT. +1000 Aura telah terjadi insiden yang besar, dimana seorang hengker berhasil masuk ke sistem database perusahaan tersebut, dan melakukan manipulasi sistem database mereka. Anda sebagai profesional Cyber Security Analyst ditugaskan untuk melakukan investigasi melalui log network yang berhasil tercapture!
 
+Pada challenge ini, jawaban untuk sebagian besar pertanyaan dapat ditemukan pada stream ke-9, termasuk nama database dan port yang digunakan. Kredensial user dan database bisa ditemukan di bagian atas stream tersebut. Untuk bagian password, kami juga perlu melakukan dekripsi untuk mendapatkan password admin 1234.
+
 ![image](https://github.com/user-attachments/assets/616bd21e-2fec-41ca-abb5-e1d683784842)
 ![image](https://github.com/user-attachments/assets/8b907892-3254-4c75-8421-0b319d6287db)
 ![image](https://github.com/user-attachments/assets/81aae13b-3972-4af2-9c9d-1f92f7b1a21d)
@@ -355,6 +357,10 @@ Benar! Ini flag-mu: JarkomIT{Gy4tT_M5g_4U_EtfGOMNeXuVKYB7KXeLlaF9pP5k1WZWvWqmjaR
 > Setelah berhasil menginvestigasi server yang berjalan, kamu diharuskan untuk mencari identitas dan mencari jejak apa saja yang telah dilakukan oleh penyerang! Kamu jago, pasti bisa let’s go temukan tersangkanya!!!
 File sama seperti Gajah Terbang.
 
+Untuk challenge ini, kami memulai dengan memfilter paket data yang mengarah ke file yang berisi informasi user dan produk pada stream nomor 178. Dalam stream tersebut, kami menemukan data user dan password, yang kemudian dianalisis. Salah satu user bernama "Kunto Aji" melakukan perubahan signifikan pada user lain, menunjukkan bahwa dia adalah attacker. Kami kemudian melakukan hash pada password Kunto Aji untuk memastikan identitasnya sebagai attacker. Setelah mendekripsi password attacker, kami menemukan bukti kuat bahwa serangan dilakukan oleh user yang memodifikasi akses admin. Waktu pelarangan (ban) pengguna teridentifikasi melalui query "SELECT * FROM banned_users." Modifikasi data penting terlihat dari query "UPDATE" dan "DELETE." Si attacker ini juga memanipulasi data pembelian dan pengeluaran dengan mencocokkan id pengguna pada tabel transaksi.
+
+![image](https://github.com/user-attachments/assets/ca4c7b3c-7f53-4519-ba63-814ceca1421a)
+![image](https://github.com/user-attachments/assets/f4f21055-145e-4d8e-8ea9-4bee87ed19e2)
 ![image](https://github.com/user-attachments/assets/bb6464ef-2fcc-4518-9f5c-bc0e71e0468e)
 
 ```
@@ -392,6 +398,10 @@ Benar! Ini flag-mu: JarkomIT{G4jaH_K0k_t3RbaNG_wrS7WJEC7KqnEcgPsuQIJCHNKYnt3q9Cv
 >
 > 14.zip
 
+Dalam challenge ini, kami menemukan beberapa stream yang mengandung file gambar ".jpg.". Selain itu, kami menemukan file Python pada salah satu stream yang berisi kode untuk mengekstrak pesan rahasia dari gambar-gambar tersebut. Setelah menggabungkan dan membalik kata-kata yang dihasilkan dan menjawab semua pertanyaan dengan benar kami mendapatkan flag!
+
+![image](https://github.com/user-attachments/assets/4bf4f880-d4d6-4172-93a6-f9e7634cab2b)
+![image](https://github.com/user-attachments/assets/9400402a-f867-4655-8168-1f57449ee8dc)
 ![image](https://github.com/user-attachments/assets/31d9aed3-94d5-4764-9843-5a5217e7b69f)
 
 ```
