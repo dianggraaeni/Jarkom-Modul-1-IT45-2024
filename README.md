@@ -355,10 +355,60 @@ Benar! Ini flag-mu: JarkomIT{Gy4tT_M5g_4U_EtfGOMNeXuVKYB7KXeLlaF9pP5k1WZWvWqmjaR
 > Setelah berhasil menginvestigasi server yang berjalan, kamu diharuskan untuk mencari identitas dan mencari jejak apa saja yang telah dilakukan oleh penyerang! Kamu jago, pasti bisa let’s go temukan tersangkanya!!!
 File sama seperti Gajah Terbang.
 
+![image](https://github.com/user-attachments/assets/bb6464ef-2fcc-4518-9f5c-bc0e71e0468e)
+
+```
+$ nc 10.15.42.60 62000
+
+===== Gajah Terbang (Attacker Recon) =====
+Note: You can exit anytime by typing 'exit'
+
+Akun apa yang dimiliki oleh penyerang dalam database tersebut, berikan emailnya!
+Format: user@gmail.com
+> kuntoajiisrillll@gmail.com
+Apa password yang digunakan oleh penyerang?
+Format: string
+> kissme
+Pada tanggal berapa akun penyerang diban?
+Format:  YYYY-MM-DD
+ex. 1945-08-17
+> 2024-06-09
+Table apa saja yang dimodifikasi oleh penyerang?
+Format: string dan string
+> users dan banned_users
+Barang apa saja yang telah dibeli oleh penyerang?
+Format: string dan string
+> rokok dan es krim
+Berapa total transaksi dari barang yang dibeli oleh penyerang?
+Format: number
+> 24500
+Benar! Ini flag-mu: JarkomIT{G4jaH_K0k_t3RbaNG_wrS7WJEC7KqnEcgPsuQIJCHNKYnt3q9CvOvG1Mkuqs7GSeqTsrOQKKt5}
+```
+
 ## Stegeography
 > Seekor stegosaurus berusaha menyimpan pesan di dalam beberapa gambar apakah kamu bisa memperoleh dan menyusunnya?
 >
 > nc 10.15.42.60 58000
 >
 > 14.zip
+
+![image](https://github.com/user-attachments/assets/31d9aed3-94d5-4764-9843-5a5217e7b69f)
+
+```
+$ nc 10.15.42.60 58000
+
+===== Stegography =====
+Note: You can exit anytime by typing 'exit'
+
+Ada berapa banyak gambar yang dikirim?
+Format: number
+> 13
+Nama-nama file yang memiliki pesan? (Berurut abjad)
+Format: NAMEFILE, NAMEFILE ex. CALCULUS, FISIKA
+> ATP, EH, KJK
+Apa pesannya jika digabung?
+Format: string ex. meteor jatuh
+> pahlawan keamanan siber
+Benar! Ini flag-mu: JarkomIT{S3LaM4t_p4rA_PahL4WaN_5SHsSOZ6P8QcP8PlGZwsNFzmnP5sMU5iCPO5Cdp06S9acOo2kW8MIhC5}
+```
 
