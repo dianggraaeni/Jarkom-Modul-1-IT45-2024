@@ -17,7 +17,7 @@
    * Packets Barrage
    * Malicious Code
      
-   (+)
+   REVISI
    * Gajah Terbang (Server Recon)
    * Gajah Terbang (Attacker Recon)
    * Stegography
