@@ -23,6 +23,7 @@
    * Stegography
    * Baby Hengker
    * Adult Hengker
+   * 22 Nightmare
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
@@ -455,3 +456,22 @@ Pertanyaan 1 dapat kita temukan di screenshot ini
 ![Screenshot 2024-09-22 182446](https://github.com/user-attachments/assets/523bb22f-bd24-49fb-89d8-2d490e45f89b)
 
 Pertanyaan kedua dapat ditemukan dengan menggunakan tool dari repo "https://github.com/WangYihang/USB-Mouse-Pcap-Visualizer"
+
+## 22 Nightmare
+> Dicari rusa yang hilang.
+>
+> nc 10.15.42.60 45000
+>
+> oimazrim.pcap
+
+![Screenshot 2024-09-22 221620](https://github.com/user-attachments/assets/88d922d9-cdff-4f60-bfd5-39310b541376)
+![Screenshot 2024-09-22 221612](https://github.com/user-attachments/assets/64d51cad-27fe-411f-9bea-2ebef866960d)
+
+Pertama kita lakukan filter untuk file FTP dan mencari nama file yang dikirim oleh attacker
+![Screenshot 2024-09-22 220156](https://github.com/user-attachments/assets/c0ae4da2-2602-4aaa-a36f-5e2399eb1099)
+
+Lalu lakukan filter ke ftp-data dan download stream dalam bentuk raw lalu save sebagai file .jpg
+![Screenshot 2024-09-22 220902](https://github.com/user-attachments/assets/4115a862-949d-485f-b537-a96319b3cda7)
+
+Lalu kita temukan stream dari noko.py dan mencari nama asli pengirim
+
