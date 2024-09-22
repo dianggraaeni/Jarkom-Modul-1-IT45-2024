@@ -21,6 +21,8 @@
    * Gajah Terbang (Server Recon)
    * Gajah Terbang (Attacker Recon)
    * Stegography
+   * Baby Hengker
+   * Adult Hengker
 
 ## Advance Sanity Check
 > Yang sederhana dulu aja.
@@ -423,3 +425,33 @@ Format: string ex. meteor jatuh
 Benar! Ini flag-mu: JarkomIT{S3LaM4t_p4rA_PahL4WaN_5SHsSOZ6P8QcP8PlGZwsNFzmnP5sMU5iCPO5Cdp06S9acOo2kW8MIhC5}
 ```
 
+## Baby Hengker
+> Pada suatu hari, ada seorang mahasiswa yang menyusup kedalam lab. mahasiswa tersebut menyalakan salah satu komputer yang ada dan mulai mengetikkan sesuatu?!?!?! bantulah mas aji menganalisa apa yang dilakukan oleh mahasiswa tersebut.
+>
+> nc 10.15.42.60 55000
+>
+> innerchild.pcap
+
+![Screenshot 2024-09-22 182217](https://github.com/user-attachments/assets/3561070a-1632-4b55-92f8-cbd505c0231d)
+![Screenshot 2024-09-22 182228](https://github.com/user-attachments/assets/da240c53-2138-4ad8-b8ab-ed06daca8c4d)
+
+Pertanyaan 1 bisa temukan di packet ke 7
+
+![Screenshot 2024-09-22 175146](https://github.com/user-attachments/assets/9aae327f-94bc-497d-9ef4-5fb8ae6f6ee5)
+
+Untuk pertanyaan kedua kita menggunakan script CTF-usb_keyboard_parser dan run proggram tersebut. 
+
+## Adult Hengker
+> Setelah sang mahasiswa tau passwordnya, dia akhirnya bisa masuk ke komputer dan menuliskan sesuatu di ms paint, apakah kamu tau dia menulis apa?
+>
+> nc 10.15.42.60 64000
+>
+> innerchild2.pcap
+
+![Screenshot 2024-09-22 185445](https://github.com/user-attachments/assets/1055e899-e1a3-423a-92c3-d6b1ebc91683)
+
+Pertanyaan 1 dapat kita temukan di screenshot ini
+
+![Screenshot 2024-09-22 182446](https://github.com/user-attachments/assets/523bb22f-bd24-49fb-89d8-2d490e45f89b)
+
+Pertanyaan kedua dapat ditemukan dengan menggunakan tool dari repo "https://github.com/WangYihang/USB-Mouse-Pcap-Visualizer"
